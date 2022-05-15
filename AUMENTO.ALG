@@ -1,0 +1,75 @@
+Algoritmo "aumento do salario"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 01/05/2022
+Var
+// Seção de Declarações das variáveis 
+salario,funcionario,opcao:real
+a:inteiro
+Inicio
+a<-5
+enquanto a>0 faca
+escreval("")
+escreval("             AUMENTO DE SALARIO ")
+escreval("")
+escreva(" nome do funcionario:")
+ leia (funcionario)
+escreva(" salario atual:")
+ leia (salario)
+escreval("")
+escreval(" (1) - aumento de 15%")
+escreval(" (2) - aumento de 12%")
+escreval(" (3) - aumento de 10%")
+escreval(" (4) - aumento de 7%")
+escreval(" (5) - aumento de 4%")
+escreval(" (6) - sem aumento")
+escreval("")
+escreva(" escolha uma opção:")
+ leia(opcao)
+escreval("")
+ escolha (opcao)
+ caso 1
+ se (salario>=0) e (salario<=400) entao
+escreval(" aumento de 15%")
+escreval(" salario atual:", salario)
+escreval(" o novo salario sera de: ", salario*15/100+salario)
+ fimse
+ caso 2
+ se (salario>=401) e (salario<=700) entao
+escreval(" aumento de 12%")
+escreval(" salario atual:", salario)
+escreval(" o novo salario sera de: ", salario*12/100+salario)
+ fimse
+ caso 3
+ se (salario>=701) e (salario<=1000) entao
+escreval(" aumento de 10%")
+escreval(" salario atual:", salario)
+escreval(" o novo salario sera de: ", salario*10/100+salario)
+ fimse
+ caso 4
+ se (salario>=1001) e (salario<=1800) entao
+escreval(" aumento de 7%")
+escreval(" salario atual:", salario)
+escreval(" o novo salario sera de: ", salario*7/100+salario)
+ fimse
+ caso 5
+ se (salario>=1801) e (salario<=2500) entao
+escreval(" aumento de 4%")
+escreval(" salario atual:", salario)
+escreval(" o novo salario sera de: ", salario*4/100+salario)
+ fimse
+ caso 6
+ se (salario>=2500) entao
+escreval(" sem aumento ")
+escreval(" salario atual:", salario)
+escreval( salario>=2500," sem aumeto ")
+ fimse
+outrocaso
+escreval(" opção inexistente!")
+fimescolha
+a<-a-1
+fimenquanto
+// Seção de Comandos, procedimento, funções, operadores, etc...
+Fimalgoritmo
